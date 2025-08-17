@@ -21,6 +21,8 @@ dependencies {
     implementation(libs.exposed.core)
     implementation(libs.exposed.dao)
     implementation(libs.exposed.jdbc)
+    implementation(libs.exposed.kotlin.datetime)
+    implementation(libs.exposed.json)
 
     // JasperReports - minimal setup
     implementation("net.sf.jasperreports:jasperreports:6.20.6") {
@@ -30,6 +32,7 @@ dependencies {
     }
 
     implementation("org.xerial:sqlite-jdbc:3.44.1.0")
+    implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.19.+")
 
     // PDF support
     implementation("com.github.librepdf:openpdf:1.3.30")
