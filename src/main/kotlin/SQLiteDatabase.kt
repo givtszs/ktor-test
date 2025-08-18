@@ -7,14 +7,6 @@ import java.sql.Connection
 import java.sql.DriverManager
 
 fun Application.configureSQLiteDatabase(dbPath: String = "data/tasks.db"): Database {
-    // Get database path from config or use default
-//    val dbPath = environment.config.propertyOrNull("sqlite.path")?.getString()
-//        ?: "data/tasks.db"
-
-    // Ensure directory exists
-//    val dbFile = File(dbPath)
-//    dbFile.parentFile?.mkdirs()
-
     val database = Database.connect(
         url = "jdbc:sqlite:$dbPath",
         driver = "org.sqlite.JDBC"

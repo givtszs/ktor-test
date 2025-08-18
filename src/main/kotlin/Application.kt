@@ -1,7 +1,9 @@
 package com.example
 
-import com.example.model.PostgresTaskRepository
+import com.example.app.repositories.UserRepository
+import com.example.app.repositories.app.repositories.ApplicationRepository
 import com.example.model.SQLiteTaskRepository
+import com.example.routes.configureTestRoutes
 import io.ktor.server.application.*
 
 fun main(args: Array<String>) {
@@ -11,10 +13,13 @@ fun main(args: Array<String>) {
 fun Application.module() {
 //    val repository = PostgresTaskRepository()
     val repository = SQLiteTaskRepository()
+    val userRepository = UserRepository()
+    val applicationRepository = ApplicationRepository()
 
-    configureSerialization(repository)
+    configureSerialization(repository, userRepository)
 //    configureDatabases()
-    configureSQLiteDatabase()
+    configureSQLiteDatabase("data/database.sqlite")
     configureRouting()
     configureReportsRouting(repository)
+    configureTestRoutes(userRepository, applicationRepository)
 }

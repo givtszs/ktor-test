@@ -11,5 +11,5 @@ object UsersTable : IntIdTable("users") {
     val createdAt = datetime("created_at").nullable()
     val updatedAt = datetime("updated_at").nullable()
     val photo = varchar("user_photo", 500).nullable()
-    val university = reference("university_id", UniversitiesTable)
+    val university = reference("university_id", UniversitiesTable).nullable()
 }

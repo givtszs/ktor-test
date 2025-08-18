@@ -14,6 +14,10 @@ import java.sql.DriverManager
 import org.jetbrains.exposed.sql.*
 
 fun Application.configureRouting() {
+    install(ContentNegotiation) {
+        json()
+    }
+
     install(StatusPages) {
         exception<Throwable> { call, cause ->
             call.respondText(text = "500: $cause" , status = HttpStatusCode.InternalServerError)

@@ -10,6 +10,6 @@ data class User(
     val emailVerifiedAt: String?,
     val createdAt: String?,
     val updatedAt: String?,
-    val university: University,
+    val university: University?,
     val photo: String?
 )

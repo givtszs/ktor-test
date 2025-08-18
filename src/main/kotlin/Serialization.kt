@@ -1,5 +1,6 @@
 package com.example
 
+import com.example.app.repositories.contracts.UserRepositoryContract
 import com.example.model.Priority
 import com.example.model.Task
 import com.example.model.TaskRepository
@@ -12,10 +13,10 @@ import io.ktor.server.request.*
 import io.ktor.server.response.*
 import io.ktor.server.routing.*
 
-fun Application.configureSerialization(repository: TaskRepository) {
-    install(ContentNegotiation) {
-        json()
-    }
+fun Application.configureSerialization(
+    repository: TaskRepository,
+    userRepository: UserRepositoryContract
+) {
     routing {
         route("/tasks") {
             get {

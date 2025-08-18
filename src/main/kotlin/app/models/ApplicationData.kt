@@ -4,6 +4,11 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class ApplicationData(
+    /** draft application data */
+    val selectedType: String? = null,
+    val selectedUniversity: String? = null,
+
+    /** submitted application data */
     val firstName: String? = null,
     val secondName: String? = null,
     val lastName: String? = null,
@@ -46,7 +51,7 @@ data class ApplicationData(
     val residence_house: String? = null,
     val residence_apartment: String? = null,
     val familyMembersData: String? = null,
-    val familyPhoto: String? = null,
+    val familyPhoto: List<String>? = null,
     val privilegeExists: String? = null,
     val privilege_typeOfPrivilege_id: String? = null,
     val privilege_otherPrivilege: String? = null,
