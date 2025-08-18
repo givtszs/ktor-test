@@ -19,6 +19,7 @@ class ApplicationEntity(id: EntityID<Int>) : IntEntity(id) {
     val correctionsCount by ApplicationsTable.correctionsCount
 
     fun toModel() = Application(
+        id = this.id.value,
         user = this.user.toModel(),
         status = this.status,
         data = this.data,

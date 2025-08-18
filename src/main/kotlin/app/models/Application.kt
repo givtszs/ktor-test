@@ -4,6 +4,7 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class Application(
+    val id: Int,
     val user: User,
     val status: String,
     val data: ApplicationData,

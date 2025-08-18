@@ -4,4 +4,5 @@ import com.example.app.models.Application
 
 interface ApplicationRepositoryContract {
     suspend fun allApplications(): List<Application>
+    suspend fun applicationById(id: Int): Application?
 }

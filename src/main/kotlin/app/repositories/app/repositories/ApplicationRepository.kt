@@ -9,4 +9,8 @@ class ApplicationRepository : ApplicationRepositoryContract {
     override suspend fun allApplications(): List<Application> = suspendTransaction {
         ApplicationEntity.all().map(ApplicationEntity::toModel)
     }
+
+    override suspend fun applicationById(id: Int): Application? = suspendTransaction {
+        ApplicationEntity.findById(id)?.toModel()
+    }
 }
