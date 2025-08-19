@@ -1,6 +1,7 @@
 package com.example.database.entities
 
 import com.example.app.models.Application
+import com.example.app.models.ApplicationData
 import com.example.database.tables.ApplicationsTable
 import org.jetbrains.exposed.dao.ImmutableEntityClass
 import org.jetbrains.exposed.dao.IntEntity

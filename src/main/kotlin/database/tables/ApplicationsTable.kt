@@ -1,6 +1,6 @@
 package com.example.database.tables
 
-import com.example.app.models.ApplicationData
+import com.example.app.models.ApplicationDataDto
 import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
 import com.fasterxml.jackson.module.kotlin.readValue
 import org.jetbrains.exposed.dao.id.IntIdTable
@@ -16,7 +16,7 @@ object ApplicationsTable : IntIdTable("applications") {
     val data = json(
         "data",
         { mapper.writeValueAsString(it) },
-        { mapper.readValue<ApplicationData>(it) }
+        { mapper.readValue<ApplicationDataDto>(it) }
     )
     val createdAt = datetime("created_at").nullable()
     val updatedAt = datetime("updated_at").nullable()

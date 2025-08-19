@@ -7,7 +7,7 @@ data class Application(
     val id: Int,
     val user: User,
     val status: String,
-    val data: ApplicationData,
+    val data: ApplicationDataDto,
     val createdAt: String?,
     val updatedAt: String?,
     val corrections: String?,

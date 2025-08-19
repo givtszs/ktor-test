@@ -1,0 +1,11 @@
+package com.example.database.tables
+
+import org.jetbrains.exposed.dao.id.IntIdTable
+import org.jetbrains.exposed.sql.kotlin.datetime.datetime
+
+object DormitoriesTable : IntIdTable("dormitories") {
+    val name = varchar("name", 255)
+    val address = varchar("address", 255)
+    val createdAt = datetime("created_at").nullable()
+    val updatedAt = datetime("updated_at").nullable()
+}

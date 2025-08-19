@@ -1,5 +1,6 @@
 package com.example.service
 
+import com.example.app.models.PlacementOrderData
 import com.example.model.Task
 import com.example.model.Priority
 import net.sf.jasperreports.engine.*
@@ -25,6 +26,7 @@ class JasperReportService {
     // Precompiled templates (loaded once)
     private val tasksReport: JasperReport by lazy { compileReport(TASKS_REPORT_PATH) }
     private val tasksByPriorityReport: JasperReport by lazy { compileReport(TASKS_BY_PRIORITY_REPORT_PATH) }
+    private val placementOrder: JasperReport by lazy { compileReport("/reports/placement-order.jrxml") }
 
     /**
      * Compile a jrxml file into a JasperReport once at startup.
@@ -34,6 +36,9 @@ class JasperReportService {
             ?: throw IllegalArgumentException("Report template not found: $path")
         return JasperCompileManager.compileReport(reportStream)
     }
+
+    suspend fun generatePlacementOrderPdf(placementOrderData: PlacementOrderData) =
+        generatePlacementOrder(placementOrder, placementOrderData)
 
     suspend fun generateTasksReportPdf(tasks: List<Task>) =
         generateReport(tasksReport, tasks, "pdf")
@@ -100,6 +105,30 @@ class JasperReportService {
                 "xlsx" -> exportToExcel(jasperPrint)
                 else -> throw IllegalArgumentException("Unsupported format: $format")
             }
+        } catch (e: Exception) {
+            throw RuntimeException("Error generating report", e)
+        }
+    }
+
+    private fun generatePlacementOrder(
+        jasperReport: JasperReport,
+        placementOrderData: PlacementOrderData,
+    ): ByteArray {
+        return try {
+            val parameters = mapOf(
+                "firstName" to placementOrderData.firstName,
+                "secondName" to placementOrderData.secondName,
+                "lastName" to "Placement Order",
+                "faculty" to placementOrderData.faculty,
+                "course" to placementOrderData.course,
+                "educationLevel" to placementOrderData.educationLevel,
+                "dormitory" to placementOrderData.dormitory,
+                "room" to placementOrderData.room,
+            )
+
+            val jasperPrint = JasperFillManager.fillReport(jasperReport, parameters, JREmptyDataSource(1))
+
+            exportToPdf(jasperPrint)
         } catch (e: Exception) {
             throw RuntimeException("Error generating report", e)
         }

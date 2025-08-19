@@ -19,6 +19,7 @@ class UserEntity(id: EntityID<Int>) : IntEntity(id) {
     val university by UniversityEntity optionalReferencedOn UsersTable.university
 
     fun toModel() = User(
+        id = this.id.value,
         name = this.name,
         email = this.email,
         password = this.password,

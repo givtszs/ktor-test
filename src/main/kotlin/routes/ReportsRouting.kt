@@ -1,5 +1,7 @@
-package com.example
+package com.example.routes
 
+import com.example.app.models.PlacementOrderData
+import com.example.app.services.ReportsService
 import com.example.model.Priority
 import com.example.model.TaskRepository
 import com.example.service.JasperReportService
@@ -10,11 +12,54 @@ import io.ktor.server.routing.*
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 
-fun Application.configureReportsRouting(repository: TaskRepository) {
+fun Application.configureReportsRouting(repository: TaskRepository, reportsService: ReportsService) {
     val reportService = JasperReportService()
+
 
     routing {
         route("/reports") {
+            get("/{applicationId}/placement-order") {
+                try {
+                    val id = call.parameters["applicationId"]
+
+                    if (id == null || id.isEmpty()) {
+                        call.respond(HttpStatusCode.BadRequest, "Application id is null")
+                        return@get
+                    }
+
+                    val applicationData = reportsService.prepareApplicationData(id.toInt())
+                    val placementOrderData = PlacementOrderData(
+                        firstName = applicationData.firstName,
+                        secondName = applicationData.secondName,
+                        lastName = applicationData.lastName,
+                        faculty = applicationData.education.faculty,
+                        course = applicationData.education.course,
+                        educationLevel = applicationData.education.educationLevel,
+                        dormitory = applicationData.selectedDormitory,
+                        room = applicationData.selectedRoom,
+                    )
+
+//                    call.respond(placementOrderData)
+//                    return@get
+
+                    val placementOrderBytes = withContext(Dispatchers.IO) {
+                        reportService.generatePlacementOrderPdf(placementOrderData)
+                    }
+
+                    call.response.header(
+                        HttpHeaders.ContentDisposition,
+                        "attachment; filename=\"placement_order.pdf\""
+                    )
+                    call.respondBytes(
+                        placementOrderBytes,
+                        contentType = ContentType.Application.Pdf,
+                        status = HttpStatusCode.OK
+                    )
+                } catch (e: Exception) {
+                    application.log.error("Error generating tasks PDF report", e)
+                    call.respond(HttpStatusCode.InternalServerError, "Error generating report: ${e.message}")
+                }
+            }
 
             // Generate all tasks report in PDF
             get("/tasks/pdf") {

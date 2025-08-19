@@ -16,6 +16,7 @@ class UniversityEntity(id: EntityID<Int>) : IntEntity(id) {
     val updatedAt by UniversitiesTable.updatedAt
 
     fun toModel() = University(
+        id = this.id.value,
         fullName = this.fullName,
         shortName = this.shortName,
         isActive = this.isActive,

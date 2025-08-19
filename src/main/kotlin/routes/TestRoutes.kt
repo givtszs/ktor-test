@@ -1,7 +1,7 @@
 package com.example.routes
 
 import com.example.app.repositories.contracts.UserRepositoryContract
-import com.example.app.repositories.contracts.app.repositories.contracts.ApplicationRepositoryContract
+import com.example.app.repositories.contracts.ApplicationRepositoryContract
 import io.ktor.http.HttpStatusCode
 import io.ktor.server.application.*
 import io.ktor.server.response.*

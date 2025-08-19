@@ -3,11 +3,11 @@ package com.example.app.models
 import kotlinx.serialization.Serializable
 
 @Serializable
-data class University(
+data class Room(
     val id: Int,
-    val fullName: String,
-    val shortName: String,
+    val number: String,
+    val capacity: Int,
+    val isActive: Boolean,
     val createdAt: String?,
     val updatedAt: String?,
-    val isActive: Boolean,
 )

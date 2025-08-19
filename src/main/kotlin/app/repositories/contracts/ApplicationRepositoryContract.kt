@@ -1,4 +1,4 @@
-package com.example.app.repositories.contracts.app.repositories.contracts
+package com.example.app.repositories.contracts
 
 import com.example.app.models.Application
 
