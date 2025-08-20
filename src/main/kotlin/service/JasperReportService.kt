@@ -118,7 +118,7 @@ class JasperReportService {
             val parameters = mapOf(
                 "firstName" to placementOrderData.firstName,
                 "secondName" to placementOrderData.secondName,
-                "lastName" to "Placement Order",
+                "lastName" to placementOrderData.lastName,
                 "faculty" to placementOrderData.faculty,
                 "course" to placementOrderData.course,
                 "educationLevel" to placementOrderData.educationLevel,

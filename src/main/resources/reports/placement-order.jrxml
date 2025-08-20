@@ -1,297 +1,297 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Created with Jaspersoft Studio 7.0.3, normalized for JasperReports Library -->
 <jasperReport name="NapravlennyaNaPoselennya" language="java"
-			  pageWidth="595" pageHeight="842" columnWidth="555"
-			  leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+              pageWidth="595" pageHeight="842" columnWidth="555"
+              leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
 
-	<parameter name="firstName" class="java.lang.String"/>
-	<parameter name="secondName" class="java.lang.String"/>
-	<parameter name="lastName" class="java.lang.String"/>
-	<parameter name="faculty" class="java.lang.String"/>
-	<parameter name="educationLevel" class="java.lang.String"/>
-	<parameter name="course" class="java.lang.String"/>
-	<parameter name="dormitory" class="java.lang.String"/>
-	<parameter name="room" class="java.lang.String"/>
+    <parameter name="firstName" class="java.lang.String"/>
+    <parameter name="secondName" class="java.lang.String"/>
+    <parameter name="lastName" class="java.lang.String"/>
+    <parameter name="faculty" class="java.lang.String"/>
+    <parameter name="educationLevel" class="java.lang.String"/>
+    <parameter name="course" class="java.lang.String"/>
+    <parameter name="dormitory" class="java.lang.String"/>
+    <parameter name="room" class="java.lang.String"/>
 
-	<detail>
-		<band height="500">
+    <detail>
+        <band height="500">
 
-			<!-- Title -->
-			<staticText>
-				<reportElement mode="Transparent" x="100" y="0" width="355" height="30"/>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Times New Roman" size="11" isBold="true"/>
-				</textElement>
-				<text><![CDATA[НАПРАВЛЕННЯ НА ПОСЕЛЕННЯ]]></text>
-			</staticText>
+            <!-- Title -->
+            <staticText>
+                <reportElement mode="Transparent" x="100" y="0" width="355" height="30"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="Times New Roman" size="11" isBold="true"/>
+                </textElement>
+                <text><![CDATA[НАПРАВЛЕННЯ НА ПОСЕЛЕННЯ]]></text>
+            </staticText>
 
-			<!-- П.І.Б студента -->
-			<staticText>
-				<reportElement x="0" y="50" width="120" height="20"/>
-				<textElement textAlignment="Left" verticalAlignment="Middle">
-					<font fontName="Times New Roman" size="14"/>
-<!--					<paragraph leftIndent="5"/>-->
-				</textElement>
-				<text><![CDATA[П.І.Б студента:]]></text>
-			</staticText>
+            <!-- П.І.Б студента -->
+            <staticText>
+                <reportElement x="0" y="50" width="120" height="20"/>
+                <textElement textAlignment="Left" verticalAlignment="Middle">
+                    <font fontName="Times New Roman" size="14"/>
+                </textElement>
+                <text><![CDATA[П.І.Б студента:]]></text>
+            </staticText>
 
-			<!-- Факультет: label -->
-			<staticText>
-				<reportElement x="0" y="70" width="120" height="20"/>
-				<textElement textAlignment="Left" verticalAlignment="Middle">
-<!--					<paragraph spacingBefore="20"/>-->
-				</textElement>
-				<text><![CDATA[Факультет:]]></text>
-			</staticText>
+            <!-- Факультет: label -->
+            <staticText>
+                <reportElement x="0" y="70" width="120" height="20"/>
+                <textElement verticalAlignment="Middle">
+                    <font fontName="Times New Roman" size="14"/>
+                </textElement>
+                <text><![CDATA[факультет]]></text>
+            </staticText>
 
-			<!-- освітній рівень label -->
-			<staticText>
-				<reportElement x="0" y="90" width="120" height="20"/>
-				<textElement textAlignment="Left" verticalAlignment="Middle">
-					<font fontName="Times New Roman" size="14"/>
-<!--					<paragraph leftIndent="5"/>-->
-				</textElement>
-				<text><![CDATA[освітній рівень]]></text>
-			</staticText>
+            <!-- освітній рівень label -->
+            <staticText>
+                <reportElement x="0" y="90" width="120" height="20"/>
+                <textElement textAlignment="Left" verticalAlignment="Middle">
+                    <font fontName="Times New Roman" size="14"/>
+                </textElement>
+                <text><![CDATA[освітній рівень]]></text>
+            </staticText>
 
-			<!-- гуртожиток label -->
-			<staticText>
-				<reportElement x="0" y="110" width="120" height="20"/>
-				<textElement textAlignment="Left" verticalAlignment="Middle">
-					<font fontName="Times New Roman" size="14"/>
-<!--					<paragraph leftIndent="5"/>-->
-				</textElement>
-				<text><![CDATA[гуртожиток]]></text>
-			</staticText>
+            <!-- гуртожиток label -->
+            <staticText>
+                <reportElement x="0" y="110" width="120" height="20"/>
+                <textElement textAlignment="Left" verticalAlignment="Middle">
+                    <font fontName="Times New Roman" size="14"/>
+                </textElement>
+                <text><![CDATA[гуртожиток]]></text>
+            </staticText>
 
-			<!-- Rectangles / boxes -->
-			<rectangle><reportElement x="250" y="50" width="130" height="20"/></rectangle>
-			<rectangle><reportElement x="380" y="50" width="130" height="20"/></rectangle>
-			<rectangle><reportElement x="120" y="50" width="130" height="20"/></rectangle>
-			<rectangle><reportElement x="120" y="70" width="390" height="20"/></rectangle>
-			<rectangle><reportElement mode="Transparent" x="0" y="50" width="120" height="20"/></rectangle>
-			<rectangle><reportElement mode="Transparent" x="0" y="70" width="120" height="20"/></rectangle>
-			<rectangle><reportElement mode="Transparent" x="0" y="110" width="120" height="20"/></rectangle>
-			<rectangle><reportElement x="120" y="90" width="130" height="20"/></rectangle>
-			<rectangle><reportElement x="250" y="90" width="130" height="20"/></rectangle>
-			<rectangle><reportElement x="380" y="90" width="130" height="20"/></rectangle>
+            <!-- Rectangles / boxes -->
+            <rectangle><reportElement x="250" y="50" width="130" height="20"/></rectangle>
+            <rectangle><reportElement x="380" y="50" width="130" height="20"/></rectangle>
+            <rectangle><reportElement x="120" y="50" width="130" height="20"/></rectangle>
+            <rectangle><reportElement x="120" y="70" width="390" height="20"/></rectangle>
+            <rectangle><reportElement mode="Transparent" x="0" y="50" width="120" height="20"/></rectangle>
+            <rectangle><reportElement mode="Transparent" x="0" y="70" width="120" height="20"/></rectangle>
+            <rectangle><reportElement mode="Transparent" x="0" y="110" width="120" height="20"/></rectangle>
+            <rectangle><reportElement x="120" y="90" width="130" height="20"/></rectangle>
+            <rectangle><reportElement x="250" y="90" width="130" height="20"/></rectangle>
+            <rectangle><reportElement x="380" y="90" width="130" height="20"/></rectangle>
 
-			<!-- курс label -->
-			<staticText>
-				<reportElement x="250" y="90" width="129" height="20"/>
-				<textElement textAlignment="Left" verticalAlignment="Middle">
-					<font fontName="Times New Roman" size="14"/>
-<!--					<paragraph leftIndent="5"/>-->
-				</textElement>
-				<text><![CDATA[курс]]></text>
-			</staticText>
+            <!-- курс label -->
+            <staticText>
+                <reportElement x="250" y="90" width="129" height="20"/>
+                <textElement textAlignment="Left" verticalAlignment="Middle">
+                    <font fontName="Times New Roman" size="14"/>
+                </textElement>
+                <text><![CDATA[курс]]></text>
+            </staticText>
 
-			<rectangle><reportElement mode="Transparent" x="0" y="91" width="120" height="20"/></rectangle>
-			<rectangle><reportElement x="120" y="110" width="130" height="20"/></rectangle>
+            <rectangle><reportElement mode="Transparent" x="0" y="91" width="120" height="20"/></rectangle>
+            <rectangle><reportElement x="120" y="110" width="130" height="20"/></rectangle>
 
-			<!-- кімната label -->
-			<staticText>
-				<reportElement x="250" y="110" width="129" height="20"/>
-				<textElement textAlignment="Left" verticalAlignment="Middle">
-					<font fontName="Times New Roman" size="14"/>
-<!--					<paragraph leftIndent="5"/>-->
-				</textElement>
-				<text><![CDATA[кімната]]></text>
-			</staticText>
+            <!-- кімната label -->
+            <staticText>
+                <reportElement x="250" y="110" width="129" height="20"/>
+                <textElement textAlignment="Left" verticalAlignment="Middle">
+                    <font fontName="Times New Roman" size="14"/>
+                </textElement>
+                <text><![CDATA[кімната]]></text>
+            </staticText>
 
-			<rectangle><reportElement x="380" y="110" width="130" height="20"/></rectangle>
+            <rectangle><reportElement x="380" y="110" width="130" height="20"/></rectangle>
 
-			<!-- факультет label (lower) -->
-			<staticText>
-				<reportElement x="0" y="70" width="120" height="20"/>
-				<textElement verticalAlignment="Middle">
-					<font fontName="Times New Roman" size="14"/>
-<!--					<paragraph leftIndent="5"/>-->
-				</textElement>
-				<text><![CDATA[факультет]]></text>
-			</staticText>
+<!--            &lt;!&ndash; факультет label (lower) &ndash;&gt;-->
+<!--            <staticText>-->
+<!--                <reportElement x="0" y="70" width="120" height="20"/>-->
+<!--                <textElement verticalAlignment="Middle">-->
+<!--                    <font fontName="Times New Roman" size="14"/>-->
+<!--                </textElement>-->
+<!--                <text><![CDATA[факультет]]></text>-->
+<!--            </staticText>-->
 
-			<rectangle><reportElement mode="Transparent" x="250" y="110" width="130" height="20"/></rectangle>
+            <rectangle><reportElement mode="Transparent" x="250" y="110" width="130" height="20"/></rectangle>
 
-			<!-- Health status row -->
-			<rectangle><reportElement x="0" y="160" width="120" height="40"/></rectangle>
-			<rectangle><reportElement x="120" y="160" width="129" height="40"/></rectangle>
-			<rectangle><reportElement x="249" y="160" width="260" height="40"/></rectangle>
+            <!-- Health status row -->
+            <rectangle><reportElement x="0" y="160" width="120" height="40"/></rectangle>
+            <rectangle><reportElement x="120" y="160" width="129" height="40"/></rectangle>
+            <rectangle><reportElement x="249" y="160" width="260" height="40"/></rectangle>
 
-			<staticText>
-				<reportElement x="0" y="160" width="119" height="40"/>
-				<textElement textAlignment="Left" verticalAlignment="Bottom">
-					<font fontName="Times New Roman" size="14"/>
-<!--					<paragraph leftIndent="5"/>-->
-				</textElement>
-				<text><![CDATA[відмітка про стан здоров'я]]></text>
-			</staticText>
+            <staticText>
+                <reportElement x="0" y="160" width="119" height="40"/>
+                <textElement textAlignment="Left" verticalAlignment="Bottom">
+                    <font fontName="Times New Roman" size="14"/>
+                </textElement>
+                <text><![CDATA[відмітка про стан здоров'я]]></text>
+            </staticText>
 
-			<staticText>
-				<reportElement x="120" y="160" width="129" height="40"/>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Times New Roman" size="11"/>
-<!--					<paragraph leftIndent="5"/>-->
-				</textElement>
-				<text><![CDATA[медпункт (навч. корп. 6, вхід збоку будівлі, зі сторони дитячого садка)]]></text>
-			</staticText>
+            <staticText>
+                <reportElement x="120" y="160" width="129" height="40"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="Times New Roman" size="11"/>
+                </textElement>
+                <text><![CDATA[медпункт (навч. корп. 6, вхід збоку будівлі, зі сторони дитячого садка)]]></text>
+            </staticText>
 
-			<!-- Gas instruction row -->
-			<rectangle><reportElement x="0" y="200" width="120" height="70"/></rectangle>
-			<rectangle><reportElement x="120" y="200" width="129" height="70"/></rectangle>
-			<rectangle><reportElement x="249" y="200" width="260" height="70"/></rectangle>
+            <!-- Gas instruction row -->
+            <rectangle><reportElement x="0" y="200" width="120" height="70"/></rectangle>
+            <rectangle><reportElement x="120" y="200" width="129" height="70"/></rectangle>
+            <rectangle><reportElement x="249" y="200" width="260" height="70"/></rectangle>
 
-			<staticText>
-				<reportElement x="0" y="200" width="119" height="70"/>
-				<textElement verticalAlignment="Bottom">
-					<font fontName="Times New Roman" size="14"/>
-<!--					<paragraph leftIndent="5"/>-->
-				</textElement>
-				<text><![CDATA[Інструктаж з користування газом (для гуртожитків № 3 та № 6)]]></text>
-			</staticText>
+            <staticText>
+                <reportElement x="0" y="200" width="119" height="70"/>
+                <textElement verticalAlignment="Bottom">
+                    <font fontName="Times New Roman" size="14"/>
+                </textElement>
+                <text><![CDATA[Інструктаж з користування газом (для гуртожитків № 3 та № 6)]]></text>
+            </staticText>
 
-			<staticText>
-				<reportElement x="120" y="200" width="129" height="69"/>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Times New Roman" size="11"/>
-<!--					<paragraph leftIndent="5"/>-->
-				</textElement>
-				<text><![CDATA[вул. Південне Шосе, 52. Доїхати можна трамваєм № 3 та № 16 до зупинки "вул. Діагональна"]]></text>
-			</staticText>
+            <staticText>
+                <reportElement x="120" y="200" width="129" height="69"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="Times New Roman" size="11"/>
+                </textElement>
+                <text><![CDATA[вул. Південне Шосе, 52. Доїхати можна трамваєм № 3 та № 16 до зупинки "вул. Діагональна"]]></text>
+            </staticText>
 
-			<staticText>
-				<reportElement x="247" y="200" width="261" height="69"/>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Times New Roman" size="11"/>
-<!--					<paragraph leftIndent="5"/>-->
-				</textElement>
-				<text><![CDATA[Прослухати лекцію-інструктаж. Отримати довідку. Графік роботи: понеділок-пятниця, початок лекції в 9.00, 11.00, 15.00 (жива черга)]]></text>
-			</staticText>
+            <staticText>
+                <reportElement x="247" y="200" width="261" height="69"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="Times New Roman" size="11"/>
+                </textElement>
+                <text><![CDATA[Прослухати лекцію-інструктаж. Отримати довідку. Графік роботи: понеділок-пятниця, початок лекції в 9.00, 11.00, 15.00 (жива черга)]]></text>
+            </staticText>
 
-			<!-- Payment row -->
-			<rectangle><reportElement x="0" y="270" width="120" height="50"/></rectangle>
+            <!-- Payment row -->
+            <rectangle>
+                <reportElement x="0" y="270" width="120" height="50"/>
+            </rectangle>
+            <staticText>
+                <reportElement x="0" y="270" width="120" height="50"/>
+                <textElement verticalAlignment="Bottom">
+                    <font fontName="Times New Roman" size="14"/>
+                </textElement>
+                <text><![CDATA[Оплата за проживання]]></text>
+            </staticText>
+            <rectangle><reportElement x="120" y="270" width="260" height="50"/></rectangle>
+            <rectangle><reportElement x="380" y="270" width="128" height="50"/></rectangle>
+            <staticText>
+                <reportElement x="120" y="270" width="260" height="50"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="Times New Roman" size="11"/>
+                </textElement>
+                <text><![CDATA["Запорізький національний університет" р\р UA 618201720313281001202002045 в ДКСУ у місті Київ ЄДРПОУ 0212524]]></text>
+            </staticText>
 
-			<staticText>
-				<reportElement x="0" y="270" width="120" height="50"/>
-				<textElement verticalAlignment="Bottom">
-					<font fontName="Times New Roman" size="14"/>
-<!--					<paragraph leftIndent="5"/>-->
-				</textElement>
-				<text><![CDATA[Оплата за проживання]]></text>
-			</staticText>
+            <!-- Bottom boxes -->
+            <rectangle><reportElement x="0" y="360" width="250" height="20"/></rectangle>
+            <rectangle><reportElement x="250" y="360" width="130" height="20"/></rectangle>
+            <rectangle><reportElement x="380" y="360" width="130" height="21"/></rectangle>
+            <rectangle><reportElement x="0" y="380" width="250" height="30"/></rectangle>
+            <rectangle><reportElement x="250" y="380" width="130" height="30"/></rectangle>
+            <rectangle><reportElement x="380" y="380" width="130" height="30"/></rectangle>
 
-			<rectangle><reportElement x="120" y="270" width="260" height="50"/></rectangle>
-			<rectangle><reportElement x="380" y="270" width="128" height="50"/></rectangle>
+            <staticText>
+                <reportElement x="0" y="366" width="250" height="13"/>
+                <textElement verticalAlignment="Bottom">
+                    <font fontName="Times New Roman" size="11"/>
+                </textElement>
+                <text><![CDATA[Оформлення документів]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="250" y="365" width="130" height="13"/>
+                <textElement verticalAlignment="Bottom">
+                    <font fontName="Times New Roman" size="11"/>
+                </textElement>
+                <text><![CDATA[гурт № 3, каб. 414]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="0" y="380" width="250" height="30"/>
+                <textElement verticalAlignment="Bottom">
+                    <font fontName="Times New Roman" size="11"/>
+                </textElement>
+                <text><![CDATA[Завідувач гуртожитком (поселення)]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="250" y="380" width="130" height="30"/>
+                <textElement verticalAlignment="Bottom">
+                    <font fontName="Times New Roman" size="11"/>
+                </textElement>
+                <text><![CDATA[кабінет завідувача гуртожитком]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="380" y="380" width="130" height="30"/>
+                <textElement verticalAlignment="Bottom">
+                    <font fontName="Times New Roman" size="11"/>
+                </textElement>
+                <text><![CDATA[оформлення, отримання ключа від кімнати]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="0" y="430" width="510" height="20"/>
+                <textElement textAlignment="Center">
+                    <font fontName="Times New Roman" size="11"/>
+                </textElement>
+                <text><![CDATA[Два останні пункти проходите після виконання попередніх.]]></text>
+            </staticText>
 
-			<staticText>
-				<reportElement x="120" y="270" width="260" height="50"/>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Times New Roman" size="11"/>
-<!--					<paragraph leftIndent="5"/>-->
-				</textElement>
-				<text><![CDATA["Запорізький національний університет" р\р UA 618201720313281001202002045 в ДКСУ у місті Київ ЄДРПОУ 0212524]]></text>
-			</staticText>
+            <!-- Parameters output -->
+            <textField>
+                <reportElement x="250" y="50" width="130" height="20"/>
+                <textElement>
+                    <font fontName="Times New Roman" size="14"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{firstName}]]></textFieldExpression>
+            </textField>
 
-			<!-- Bottom boxes -->
-			<rectangle><reportElement x="0" y="360" width="250" height="20"/></rectangle>
-			<rectangle><reportElement x="250" y="360" width="130" height="20"/></rectangle>
-			<rectangle><reportElement x="380" y="360" width="130" height="21"/></rectangle>
-			<rectangle><reportElement x="0" y="380" width="250" height="30"/></rectangle>
-			<rectangle><reportElement x="250" y="380" width="130" height="30"/></rectangle>
-			<rectangle><reportElement x="380" y="380" width="130" height="30"/></rectangle>
+            <textField>
+                <reportElement x="120" y="50" width="131" height="21"/>
+                <textElement>
+                    <font fontName="Times New Roman" size="14"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{secondName}]]></textFieldExpression>
+            </textField>
 
-			<staticText>
-				<reportElement x="0" y="366" width="250" height="13"/>
-				<textElement verticalAlignment="Bottom">
-					<font fontName="Times New Roman" size="11"/>
-<!--					<paragraph leftIndent="5"/>-->
-				</textElement>
-				<text><![CDATA[Оформлення документів]]></text>
-			</staticText>
+            <textField>
+                <reportElement x="380" y="49" width="131" height="21"/>
+                <textElement>
+                    <font fontName="Times New Roman" size="14"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{lastName}]]></textFieldExpression>
+            </textField>
 
-			<staticText>
-				<reportElement x="250" y="365" width="130" height="13"/>
-				<textElement verticalAlignment="Bottom">
-					<font fontName="Times New Roman" size="11"/>
-<!--					<paragraph leftIndent="5"/>-->
-				</textElement>
-				<text><![CDATA[гурт № 3, каб. 414]]></text>
-			</staticText>
+            <textField>
+                <reportElement x="120" y="70" width="391" height="21"/>
+                <textElement>
+                    <font fontName="Times New Roman" size="14"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{faculty}]]></textFieldExpression>
+            </textField>
 
-			<staticText>
-				<reportElement x="0" y="380" width="250" height="30"/>
-				<textElement verticalAlignment="Bottom">
-					<font fontName="Times New Roman" size="11"/>
-<!--					<paragraph leftIndent="5"/>-->
-				</textElement>
-				<text><![CDATA[Завідувач гуртожитком (поселення)]]></text>
-			</staticText>
+            <textField>
+                <reportElement x="120" y="90" width="131" height="21"/>
+                <textElement>
+                    <font fontName="Times New Roman" size="14"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{educationLevel}]]></textFieldExpression>
+            </textField>
 
-			<staticText>
-				<reportElement x="250" y="380" width="130" height="30"/>
-				<textElement verticalAlignment="Bottom">
-					<font fontName="Times New Roman" size="11"/>
-<!--					<paragraph leftIndent="5"/>-->
-				</textElement>
-				<text><![CDATA[кабінет завідувача гуртожитком]]></text>
-			</staticText>
+            <textField>
+                <reportElement x="380" y="90" width="131" height="21"/>
+                <textElement>
+                    <font fontName="Times New Roman" size="14"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{course}]]></textFieldExpression>
+            </textField>
 
-			<staticText>
-				<reportElement x="380" y="380" width="130" height="30"/>
-				<textElement verticalAlignment="Bottom">
-					<font fontName="Times New Roman" size="11"/>
-<!--					<paragraph leftIndent="5"/>-->
-				</textElement>
-				<text><![CDATA[оформлення, отримання ключа від кімнати]]></text>
-			</staticText>
+            <textField>
+                <reportElement x="120" y="110" width="131" height="21"/>
+                <textElement>
+                    <font fontName="Times New Roman" size="14"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{dormitory}]]></textFieldExpression>
+            </textField>
 
-			<staticText>
-				<reportElement x="0" y="430" width="510" height="20"/>
-				<textElement textAlignment="Center"/>
-				<text><![CDATA[Два останні пункти проходите після виконання попередніх.]]></text>
-			</staticText>
-
-			<!-- Parameters output -->
-			<textField>
-				<reportElement x="250" y="50" width="130" height="20"/>
-				<textFieldExpression><![CDATA[$P{firstName}]]></textFieldExpression>
-			</textField>
-
-			<textField>
-				<reportElement x="120" y="50" width="131" height="21"/>
-				<textFieldExpression><![CDATA[$P{secondName}]]></textFieldExpression>
-			</textField>
-
-			<textField>
-				<reportElement x="380" y="49" width="131" height="21"/>
-				<textFieldExpression><![CDATA[$P{lastName}]]></textFieldExpression>
-			</textField>
-
-			<textField>
-				<reportElement x="120" y="70" width="391" height="21"/>
-				<textFieldExpression><![CDATA[$P{faculty}]]></textFieldExpression>
-			</textField>
-
-			<textField>
-				<reportElement x="120" y="90" width="131" height="21"/>
-				<textFieldExpression><![CDATA[$P{educationLevel}]]></textFieldExpression>
-			</textField>
-
-			<textField>
-				<reportElement x="380" y="90" width="131" height="21"/>
-				<textFieldExpression><![CDATA[$P{course}]]></textFieldExpression>
-			</textField>
-
-			<textField>
-				<reportElement x="120" y="110" width="131" height="21"/>
-				<textFieldExpression><![CDATA[$P{dormitory}]]></textFieldExpression>
-			</textField>
-
-			<textField>
-				<reportElement x="380" y="110" width="131" height="21"/>
-				<textFieldExpression><![CDATA[$P{room}]]></textFieldExpression>
-			</textField>
-
-		</band>
-	</detail>
+            <textField>
+                <reportElement x="380" y="110" width="131" height="21"/>
+                <textElement>
+                    <font fontName="Times New Roman" size="14"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{room}]]></textFieldExpression>
+            </textField>
+        </band>
+    </detail>
 </jasperReport>

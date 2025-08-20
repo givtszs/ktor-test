@@ -35,7 +35,7 @@ fun Application.configureReportsRouting(repository: TaskRepository, reportsServi
                         faculty = applicationData.education.faculty,
                         course = applicationData.education.course,
                         educationLevel = applicationData.education.educationLevel,
-                        dormitory = applicationData.selectedDormitory,
+                        dormitory = applicationData.selectedDormitory.split(" ")[1], // take only number
                         room = applicationData.selectedRoom,
                     )
 

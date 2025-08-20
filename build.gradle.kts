@@ -25,7 +25,7 @@ dependencies {
     implementation(libs.exposed.json)
 
     // JasperReports - minimal setup
-    implementation("net.sf.jasperreports:jasperreports:6.20.6") {
+    implementation("net.sf.jasperreports:jasperreports:6.21.5") {
         // Exclude problematic transitive dependencies
         exclude(group = "com.lowagie", module = "itext")
         exclude(group = "eclipse")
@@ -44,6 +44,8 @@ dependencies {
     // XML processing (sometimes needed)
     implementation("com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.15.2")
 
+    // Fonts
+    implementation(files("fonts/jasperreports-fonts.jar"))
 
     implementation(libs.ktor.server.host.common)
     implementation(libs.ktor.server.status.pages)
