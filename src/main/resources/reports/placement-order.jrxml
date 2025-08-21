@@ -29,7 +29,7 @@
                     <font fontName="Times New Roman" size="14"/>
                     <paragraph leftIndent="2"/>
                 </textElement>
-                <text><![CDATA[П.І.Б студента:]]></text>
+                <text><![CDATA[П.І.Б студента]]></text>
             </staticText>
             <staticText>
                 <reportElement x="20" y="70" width="120" height="20" uuid="cf8d8f72-61dc-49bf-982d-c29184037231">
@@ -40,7 +40,7 @@
                     <font fontName="Times New Roman" size="14"/>
                     <paragraph leftIndent="2"/>
                 </textElement>
-                <text><![CDATA[факультет]]></text>
+                <text><![CDATA[Факультет]]></text>
             </staticText>
             <staticText>
                 <reportElement x="20" y="90" width="120" height="20" uuid="ac620594-c8e9-43b3-89c9-72f8ebcdb2a0">
@@ -51,7 +51,7 @@
                     <font fontName="Times New Roman" size="14"/>
                     <paragraph leftIndent="2"/>
                 </textElement>
-                <text><![CDATA[освітній рівень]]></text>
+                <text><![CDATA[Освітній рівень]]></text>
             </staticText>
             <staticText>
                 <reportElement x="20" y="110" width="120" height="20" uuid="561b40b2-f08d-45b8-8499-aa67581295c4">
@@ -62,7 +62,7 @@
                     <font fontName="Times New Roman" size="14"/>
                     <paragraph leftIndent="2"/>
                 </textElement>
-                <text><![CDATA[гуртожиток]]></text>
+                <text><![CDATA[Гуртожиток]]></text>
             </staticText>
             <rectangle>
                 <reportElement x="140" y="50" width="390" height="20" uuid="926cc0e0-e87f-4f7b-8236-1baf3d52306f"/>
@@ -98,7 +98,7 @@
                     <font fontName="Times New Roman" size="14"/>
                     <paragraph leftIndent="2"/>
                 </textElement>
-                <text><![CDATA[курс]]></text>
+                <text><![CDATA[Курс]]></text>
             </staticText>
             <rectangle>
                 <reportElement mode="Transparent" x="20" y="90" width="120" height="20" uuid="f42be857-2c02-4edd-b1e4-ebeccb88e066"/>
@@ -116,7 +116,7 @@
                     <font fontName="Times New Roman" size="14"/>
                     <paragraph leftIndent="2"/>
                 </textElement>
-                <text><![CDATA[кімната]]></text>
+                <text><![CDATA[Кімната]]></text>
             </staticText>
             <rectangle>
                 <reportElement x="400" y="110" width="130" height="20" uuid="29ad0c20-355e-4c88-9502-b375df5d9a46"/>
@@ -405,7 +405,7 @@
                     <font fontName="Times New Roman" size="14"/>
                     <paragraph leftIndent="2"/>
                 </textElement>
-                <textFieldExpression><![CDATA["Дата останнього щеплення: " + $P{fluorographyLastDate}]]></textFieldExpression>
+                <textFieldExpression><![CDATA["Дата останньої флюорографії: " + $P{fluorographyLastDate}]]></textFieldExpression>
             </textField>
         </band>
     </detail>
