@@ -37,6 +37,7 @@ fun Application.configureReportsRouting(repository: TaskRepository, reportsServi
                         educationLevel = applicationData.education.educationLevel,
                         dormitory = applicationData.selectedDormitory.split(" ")[1], // take only number
                         room = applicationData.selectedRoom,
+                        fluorographyLastDate = applicationData.medicalData.fluorographyLastDate
                     )
 
 //                    call.respond(placementOrderData)

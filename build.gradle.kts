@@ -24,6 +24,9 @@ dependencies {
     implementation(libs.exposed.kotlin.datetime)
     implementation(libs.exposed.json)
 
+    // MySQL driver
+    implementation("com.mysql:mysql-connector-j:8.3.0")
+
     // JasperReports - minimal setup
     implementation("net.sf.jasperreports:jasperreports:6.21.5") {
         // Exclude problematic transitive dependencies

@@ -15,9 +15,10 @@ import org.jetbrains.exposed.sql.*
 
 fun Application.configureDatabases() {
     Database.connect(
-        "jdbc:postgresql://localhost:5432/ktor_tutorial_db",
-        user = "postgres",
-        password = "root"
+        url = "jdbc:mysql://10.1.99.22:3306/hostel",
+        driver = "com.mysql.cj.jdbc.Driver",
+        user = "hostel",
+        password = "wgAV8pXgQqAKXtWu"
     )
 }
 /**

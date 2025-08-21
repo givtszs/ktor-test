@@ -1,6 +1,7 @@
 package com.example.service
 
 import com.example.app.models.PlacementOrderData
+import com.example.formatDate
 import com.example.model.Task
 import com.example.model.Priority
 import net.sf.jasperreports.engine.*
@@ -124,6 +125,7 @@ class JasperReportService {
                 "educationLevel" to placementOrderData.educationLevel,
                 "dormitory" to placementOrderData.dormitory,
                 "room" to placementOrderData.room,
+                "fluorographyLastDate" to formatDate(placementOrderData.fluorographyLastDate)
             )
 
             val jasperPrint = JasperFillManager.fillReport(jasperReport, parameters, JREmptyDataSource(1))
