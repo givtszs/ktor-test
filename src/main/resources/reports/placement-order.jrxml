@@ -25,28 +25,40 @@
                 </reportElement>
                 <textElement textAlignment="Left" verticalAlignment="Middle">
                     <font fontName="Times New Roman" size="14"/>
-                    <paragraph leftIndent="5"/>
+                    <paragraph leftIndent="2"/>
                 </textElement>
                 <text><![CDATA[П.І.Б студента:]]></text>
             </staticText>
             <staticText>
-                <reportElement x="25" y="70" width="120" height="20" uuid="cf8d8f72-61dc-49bf-982d-c29184037231"/>
+                <reportElement x="20" y="70" width="120" height="20" uuid="cf8d8f72-61dc-49bf-982d-c29184037231">
+                    <property name="com.jaspersoft.studio.unit.x" value="px"/>
+                    <property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+                </reportElement>
                 <textElement verticalAlignment="Middle">
                     <font fontName="Times New Roman" size="14"/>
+                    <paragraph leftIndent="2"/>
                 </textElement>
                 <text><![CDATA[факультет]]></text>
             </staticText>
             <staticText>
-                <reportElement x="25" y="90" width="120" height="20" uuid="ac620594-c8e9-43b3-89c9-72f8ebcdb2a0"/>
+                <reportElement x="20" y="90" width="120" height="20" uuid="ac620594-c8e9-43b3-89c9-72f8ebcdb2a0">
+                    <property name="com.jaspersoft.studio.unit.x" value="px"/>
+                    <property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+                </reportElement>
                 <textElement textAlignment="Left" verticalAlignment="Middle">
                     <font fontName="Times New Roman" size="14"/>
+                    <paragraph leftIndent="2"/>
                 </textElement>
                 <text><![CDATA[освітній рівень]]></text>
             </staticText>
             <staticText>
-                <reportElement x="25" y="110" width="120" height="20" uuid="561b40b2-f08d-45b8-8499-aa67581295c4"/>
+                <reportElement x="20" y="110" width="120" height="20" uuid="561b40b2-f08d-45b8-8499-aa67581295c4">
+                    <property name="com.jaspersoft.studio.unit.x" value="px"/>
+                    <property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+                </reportElement>
                 <textElement textAlignment="Left" verticalAlignment="Middle">
                     <font fontName="Times New Roman" size="14"/>
+                    <paragraph leftIndent="2"/>
                 </textElement>
                 <text><![CDATA[гуртожиток]]></text>
             </staticText>
@@ -81,9 +93,14 @@
                 <reportElement x="400" y="90" width="130" height="20" uuid="f2fb7172-21ba-4188-9526-50d95dbf5fef"/>
             </rectangle>
             <staticText>
-                <reportElement x="275" y="90" width="129" height="20" uuid="59dd1e50-783a-4867-9c59-a6ccf18b238a"/>
+                <reportElement x="270" y="90" width="130" height="20" uuid="59dd1e50-783a-4867-9c59-a6ccf18b238a">
+                    <property name="com.jaspersoft.studio.unit.x" value="px"/>
+                    <property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+                    <property name="com.jaspersoft.studio.unit.width" value="px"/>
+                </reportElement>
                 <textElement textAlignment="Left" verticalAlignment="Middle">
                     <font fontName="Times New Roman" size="14"/>
+                    <paragraph leftIndent="2"/>
                 </textElement>
                 <text><![CDATA[курс]]></text>
             </staticText>
@@ -94,9 +111,14 @@
                 <reportElement x="140" y="110" width="130" height="20" uuid="ef5d5a22-a866-4b0d-a690-48022b6b7ea9"/>
             </rectangle>
             <staticText>
-                <reportElement x="275" y="110" width="129" height="20" uuid="7e4609f7-298a-4ac9-aaa2-b6fa99f00f66"/>
+                <reportElement x="270" y="110" width="130" height="20" uuid="7e4609f7-298a-4ac9-aaa2-b6fa99f00f66">
+                    <property name="com.jaspersoft.studio.unit.x" value="px"/>
+                    <property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+                    <property name="com.jaspersoft.studio.unit.width" value="px"/>
+                </reportElement>
                 <textElement textAlignment="Left" verticalAlignment="Middle">
                     <font fontName="Times New Roman" size="14"/>
+                    <paragraph leftIndent="2"/>
                 </textElement>
                 <text><![CDATA[кімната]]></text>
             </staticText>
@@ -116,9 +138,13 @@
                 <reportElement x="269" y="160" width="260" height="40" uuid="0d5114a4-ea39-49ad-802a-5db0cc673add"/>
             </rectangle>
             <staticText>
-                <reportElement x="25" y="160" width="119" height="40" uuid="6cc65118-cad8-4a67-b493-7bf0b0e3c0f2"/>
+                <reportElement x="20" y="160" width="119" height="40" uuid="6cc65118-cad8-4a67-b493-7bf0b0e3c0f2">
+                    <property name="com.jaspersoft.studio.unit.x" value="px"/>
+                    <property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+                </reportElement>
                 <textElement textAlignment="Left" verticalAlignment="Bottom">
                     <font fontName="Times New Roman" size="14"/>
+                    <paragraph leftIndent="2"/>
                 </textElement>
                 <text><![CDATA[відмітка про стан здоров'я]]></text>
             </staticText>
@@ -146,12 +172,15 @@
                 </reportElement>
             </rectangle>
             <staticText>
-                <reportElement x="25" y="200" width="115" height="90" uuid="b0f722bc-9108-4563-880e-5a8e017dc5ad">
+                <reportElement x="20" y="200" width="115" height="90" uuid="b0f722bc-9108-4563-880e-5a8e017dc5ad">
                     <property name="com.jaspersoft.studio.unit.width" value="px"/>
                     <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                    <property name="com.jaspersoft.studio.unit.x" value="px"/>
+                    <property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
                 </reportElement>
                 <textElement verticalAlignment="Bottom">
                     <font fontName="Times New Roman" size="14"/>
+                    <paragraph leftIndent="2"/>
                 </textElement>
                 <text><![CDATA[Інструктаж з користування газом (для гуртожитків № 3 та № 6)]]></text>
             </staticText>
@@ -175,9 +204,13 @@
                 </reportElement>
             </rectangle>
             <staticText>
-                <reportElement x="25" y="290" width="120" height="50" uuid="7affc512-cfcc-4e92-af55-adc35d0230d5"/>
+                <reportElement x="20" y="290" width="120" height="50" uuid="7affc512-cfcc-4e92-af55-adc35d0230d5">
+                    <property name="com.jaspersoft.studio.unit.x" value="px"/>
+                    <property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+                </reportElement>
                 <textElement verticalAlignment="Bottom">
                     <font fontName="Times New Roman" size="14"/>
+                    <paragraph leftIndent="2"/>
                 </textElement>
                 <text><![CDATA[Оплата за проживання]]></text>
             </staticText>
@@ -215,37 +248,57 @@
                 <reportElement x="400" y="400" width="130" height="30" uuid="5bfeda41-2a60-4829-bdf8-6f981b8b145a"/>
             </rectangle>
             <staticText>
-                <reportElement x="25" y="386" width="250" height="13" uuid="7104feb6-0c65-452c-afb0-2faa8a788f30"/>
+                <reportElement x="20" y="380" width="250" height="19" uuid="7104feb6-0c65-452c-afb0-2faa8a788f30">
+                    <property name="com.jaspersoft.studio.unit.x" value="px"/>
+                    <property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+                </reportElement>
                 <textElement verticalAlignment="Bottom">
                     <font fontName="Times New Roman" size="11"/>
+                    <paragraph leftIndent="2"/>
                 </textElement>
                 <text><![CDATA[Оформлення документів]]></text>
             </staticText>
             <staticText>
-                <reportElement x="275" y="385" width="130" height="13" uuid="b8d4873a-19ca-4231-a87c-7f12bfaaa1bc"/>
+                <reportElement x="270" y="380" width="130" height="19" uuid="b8d4873a-19ca-4231-a87c-7f12bfaaa1bc">
+                    <property name="com.jaspersoft.studio.unit.x" value="px"/>
+                    <property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+                </reportElement>
                 <textElement verticalAlignment="Bottom">
                     <font fontName="Times New Roman" size="11"/>
+                    <paragraph leftIndent="2"/>
                 </textElement>
                 <text><![CDATA[гурт № 3, каб. 414]]></text>
             </staticText>
             <staticText>
-                <reportElement x="25" y="400" width="250" height="30" uuid="d1d70d97-5cde-4347-99cb-14b41468ccd9"/>
+                <reportElement x="20" y="400" width="250" height="30" uuid="d1d70d97-5cde-4347-99cb-14b41468ccd9">
+                    <property name="com.jaspersoft.studio.unit.x" value="px"/>
+                    <property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+                </reportElement>
                 <textElement verticalAlignment="Bottom">
                     <font fontName="Times New Roman" size="11"/>
+                    <paragraph leftIndent="2"/>
                 </textElement>
                 <text><![CDATA[Завідувач гуртожитком (поселення)]]></text>
             </staticText>
             <staticText>
-                <reportElement x="275" y="400" width="130" height="30" uuid="4ab05374-9c8f-4887-80e4-9ab0546ac07c"/>
+                <reportElement x="270" y="400" width="130" height="30" uuid="4ab05374-9c8f-4887-80e4-9ab0546ac07c">
+                    <property name="com.jaspersoft.studio.unit.x" value="px"/>
+                    <property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+                </reportElement>
                 <textElement verticalAlignment="Bottom">
                     <font fontName="Times New Roman" size="11"/>
+                    <paragraph leftIndent="2"/>
                 </textElement>
                 <text><![CDATA[кабінет завідувача гуртожитком]]></text>
             </staticText>
             <staticText>
-                <reportElement x="405" y="400" width="130" height="30" uuid="4c82ff0a-b0b7-406a-8d17-9d73d8153c1e"/>
+                <reportElement x="400" y="400" width="130" height="30" uuid="4c82ff0a-b0b7-406a-8d17-9d73d8153c1e">
+                    <property name="com.jaspersoft.studio.unit.x" value="px"/>
+                    <property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+                </reportElement>
                 <textElement verticalAlignment="Bottom">
                     <font fontName="Times New Roman" size="11"/>
+                    <paragraph leftIndent="2"/>
                 </textElement>
                 <text><![CDATA[оформлення, отримання ключа від кімнати]]></text>
             </staticText>
@@ -257,62 +310,104 @@
                 <text><![CDATA[Два останні пункти проходите після виконання попередніх.]]></text>
             </staticText>
             <textField>
-                <reportElement x="275" y="50" width="130" height="20" uuid="9aad0e4b-998f-4d0d-8ec1-95f66a994b83"/>
-                <textElement>
+                <reportElement x="270" y="50" width="130" height="20" uuid="9aad0e4b-998f-4d0d-8ec1-95f66a994b83">
+                    <property name="com.jaspersoft.studio.unit.x" value="px"/>
+                    <property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+                </reportElement>
+                <textElement verticalAlignment="Middle">
                     <font fontName="Times New Roman" size="14"/>
+                    <paragraph leftIndent="2"/>
                 </textElement>
                 <textFieldExpression><![CDATA[$P{firstName}]]></textFieldExpression>
             </textField>
             <textField>
-                <reportElement x="145" y="50" width="131" height="21" uuid="05880c98-4a89-4c2a-bba9-d7bfa1aba8f2"/>
-                <textElement>
+                <reportElement x="140" y="50" width="130" height="20" uuid="05880c98-4a89-4c2a-bba9-d7bfa1aba8f2">
+                    <property name="com.jaspersoft.studio.unit.x" value="px"/>
+                    <property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+                    <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                    <property name="com.jaspersoft.studio.unit.width" value="px"/>
+                </reportElement>
+                <textElement verticalAlignment="Middle">
                     <font fontName="Times New Roman" size="14"/>
+                    <paragraph leftIndent="2"/>
                 </textElement>
                 <textFieldExpression><![CDATA[$P{secondName}]]></textFieldExpression>
             </textField>
             <textField>
-                <reportElement x="405" y="49" width="131" height="21" uuid="aaff9490-0484-4546-8ad7-2e1f48848cbc"/>
-                <textElement>
+                <reportElement x="400" y="50" width="130" height="20" uuid="aaff9490-0484-4546-8ad7-2e1f48848cbc">
+                    <property name="com.jaspersoft.studio.unit.x" value="px"/>
+                    <property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+                    <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                    <property name="com.jaspersoft.studio.unit.width" value="px"/>
+                </reportElement>
+                <textElement verticalAlignment="Middle">
                     <font fontName="Times New Roman" size="14"/>
+                    <paragraph leftIndent="2"/>
                 </textElement>
                 <textFieldExpression><![CDATA[$P{lastName}]]></textFieldExpression>
             </textField>
             <textField>
-                <reportElement x="145" y="70" width="391" height="21" uuid="02482b6b-7060-4a1f-8a01-54651e16344d"/>
-                <textElement>
+                <reportElement x="140" y="70" width="390" height="20" uuid="02482b6b-7060-4a1f-8a01-54651e16344d">
+                    <property name="com.jaspersoft.studio.unit.x" value="px"/>
+                    <property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+                    <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                    <property name="com.jaspersoft.studio.unit.width" value="px"/>
+                </reportElement>
+                <textElement verticalAlignment="Middle">
                     <font fontName="Times New Roman" size="14"/>
+                    <paragraph leftIndent="2"/>
                 </textElement>
                 <textFieldExpression><![CDATA[$P{faculty}]]></textFieldExpression>
             </textField>
             <textField textAdjust="ScaleFont">
-                <reportElement x="140" y="90" width="131" height="21" uuid="01f6a32d-bc6e-40aa-94d2-481f2a62f95f">
+                <reportElement x="140" y="90" width="130" height="20" uuid="01f6a32d-bc6e-40aa-94d2-481f2a62f95f">
                     <property name="com.jaspersoft.studio.unit.x" value="px"/>
                     <property name="com.jaspersoft.studio.unit.firstLineIndent" value="px"/>
+                    <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                    <property name="com.jaspersoft.studio.unit.width" value="px"/>
                 </reportElement>
-                <textElement>
+                <textElement verticalAlignment="Middle">
                     <font fontName="Times New Roman" size="14"/>
-                    <paragraph firstLineIndent="5"/>
+                    <paragraph firstLineIndent="2"/>
                 </textElement>
                 <textFieldExpression><![CDATA[$P{educationLevel}]]></textFieldExpression>
             </textField>
             <textField>
-                <reportElement x="405" y="90" width="131" height="21" uuid="9e59a9f0-9265-4787-be11-3b5302dcf9d3"/>
-                <textElement>
+                <reportElement x="400" y="90" width="130" height="20" uuid="9e59a9f0-9265-4787-be11-3b5302dcf9d3">
+                    <property name="com.jaspersoft.studio.unit.x" value="px"/>
+                    <property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+                    <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                    <property name="com.jaspersoft.studio.unit.width" value="px"/>
+                </reportElement>
+                <textElement verticalAlignment="Middle">
                     <font fontName="Times New Roman" size="14"/>
+                    <paragraph leftIndent="2"/>
                 </textElement>
                 <textFieldExpression><![CDATA[$P{course}]]></textFieldExpression>
             </textField>
             <textField>
-                <reportElement x="145" y="110" width="131" height="21" uuid="a1c6ab7b-39d9-4806-91e9-6b2ecb4197af"/>
-                <textElement>
+                <reportElement x="140" y="110" width="130" height="20" uuid="a1c6ab7b-39d9-4806-91e9-6b2ecb4197af">
+                    <property name="com.jaspersoft.studio.unit.x" value="px"/>
+                    <property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+                    <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                    <property name="com.jaspersoft.studio.unit.width" value="px"/>
+                </reportElement>
+                <textElement verticalAlignment="Middle">
                     <font fontName="Times New Roman" size="14"/>
+                    <paragraph leftIndent="2"/>
                 </textElement>
                 <textFieldExpression><![CDATA[$P{dormitory}]]></textFieldExpression>
             </textField>
             <textField>
-                <reportElement x="405" y="110" width="131" height="21" uuid="ed8bd879-d31c-4a1d-8b7e-b2d615e07c1d"/>
-                <textElement>
+                <reportElement x="400" y="110" width="130" height="20" uuid="ed8bd879-d31c-4a1d-8b7e-b2d615e07c1d">
+                    <property name="com.jaspersoft.studio.unit.x" value="px"/>
+                    <property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+                    <property name="com.jaspersoft.studio.unit.width" value="px"/>
+                    <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                </reportElement>
+                <textElement verticalAlignment="Middle">
                     <font fontName="Times New Roman" size="14"/>
+                    <paragraph leftIndent="2"/>
                 </textElement>
                 <textFieldExpression><![CDATA[$P{room}]]></textFieldExpression>
             </textField>
