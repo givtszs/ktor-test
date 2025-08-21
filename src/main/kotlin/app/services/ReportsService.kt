@@ -2,6 +2,7 @@ package com.example.app.services
 
 import com.example.app.models.AddressData
 import com.example.app.models.ApplicationData
+import com.example.app.models.ApplicationDataDto
 import com.example.app.models.EducationData
 import com.example.app.models.MedicalData
 import com.example.app.models.PassportData
@@ -13,14 +14,12 @@ class ReportsService(
     private val mainRepository: MainRepository,
     private val applicationRepository: ApplicationRepositoryContract
 ) {
-    suspend fun prepareApplicationData(applicationId: Int): ApplicationData {
-        val application = applicationRepository.applicationById(applicationId)
-
-        if (application == null) {
-            throw Exception("Application with id $applicationId not found")
-        }
-
-        val applicationDataDto = application.data
+    suspend fun prepareApplicationData(applicationDataDto: ApplicationDataDto): ApplicationData {
+//        val application = applicationRepository.applicationById(applicationId)
+//
+//        if (application == null) {
+//            throw Exception("Application with id $applicationId not found")
+//        }
 
         val passportType = mainRepository.passportTypeById(applicationDataDto.passport_typeOfPassport_id?.toInt())
         val genderType = mainRepository.genderTypeById(applicationDataDto.typeOfGenderOfPerson_id?.toInt())

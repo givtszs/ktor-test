@@ -5,9 +5,12 @@ import com.example.app.repositories.ApplicationRepository
 import com.example.app.repositories.MainRepository
 import com.example.app.services.ReportsService
 import com.example.model.SQLiteTaskRepository
-import com.example.routes.configureReportsRouting
+import com.example.routes.reports.configureReportsRouting
 import com.example.routes.configureTestRoutes
+import io.ktor.http.HttpHeaders
+import io.ktor.http.HttpMethod
 import io.ktor.server.application.*
+import io.ktor.server.plugins.cors.routing.CORS
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 
@@ -23,6 +26,12 @@ fun formatDate(input: String): String {
 }
 
 fun Application.module() {
+    install(CORS) {
+        anyHost() // allow all origins
+        allowMethod(HttpMethod.Options)
+        allowMethod(HttpMethod.Post)
+        allowHeader(HttpHeaders.ContentType)
+    }
 //    val repository = PostgresTaskRepository()
     val repository = SQLiteTaskRepository()
     val userRepository = UserRepository()
@@ -32,8 +41,8 @@ fun Application.module() {
     val reportsService = ReportsService(mainRepository, applicationRepository)
 
     configureSerialization(repository, userRepository)
-    configureDatabases()
-//    configureSQLiteDatabase("data/database.sqlite")
+//    configureDatabases()
+    configureSQLiteDatabase("data/database.sqlite")
     configureRouting()
     configureReportsRouting(repository, reportsService)
     configureTestRoutes(userRepository, applicationRepository)
