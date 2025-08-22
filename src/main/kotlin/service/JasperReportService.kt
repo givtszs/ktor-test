@@ -125,7 +125,8 @@ class JasperReportService {
                 "educationLevel" to placementOrderData.educationLevel,
                 "dormitory" to placementOrderData.dormitory,
                 "room" to placementOrderData.room,
-                "fluorographyLastDate" to formatDate(placementOrderData.fluorographyLastDate)
+                "fluorographyLastDate" to placementOrderData.fluorographyLastDate,
+                "settlementDate" to placementOrderData.settlementDate,
             )
 
             val jasperPrint = JasperFillManager.fillReport(jasperReport, parameters, JREmptyDataSource(1))

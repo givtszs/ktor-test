@@ -2,6 +2,7 @@ package com.example.routes.reports
 
 import com.example.app.models.PlacementOrderData
 import com.example.app.services.ReportsService
+import com.example.formatDate
 import com.example.model.Priority
 import com.example.model.TaskRepository
 import com.example.service.JasperReportService
@@ -64,7 +65,9 @@ fun Application.configureReportsRouting(repository: TaskRepository, reportsServi
 
             post("/placement-order") {
                 val payload = call.receive<PlacementOrderPayload>()
-                val applicationData = reportsService.prepareApplicationData(payload.data)
+
+                val applicationData = reportsService.prepareApplicationData(payload.data.metadata)
+                val settlementDate = payload.data.settlementDate
 
                 val placementOrderData = PlacementOrderData(
                     firstName = applicationData.firstName,
@@ -75,7 +78,8 @@ fun Application.configureReportsRouting(repository: TaskRepository, reportsServi
                     educationLevel = applicationData.education.educationLevel,
                     dormitory = applicationData.selectedDormitory.split(" ")[1], // take only number
                     room = applicationData.selectedRoom,
-                    fluorographyLastDate = applicationData.medicalData.fluorographyLastDate
+                    fluorographyLastDate = formatDate(applicationData.medicalData.fluorographyLastDate),
+                    settlementDate = formatDate(settlementDate)
                 )
 
                 val placementOrderBytes = withContext(Dispatchers.IO) {
@@ -84,7 +88,7 @@ fun Application.configureReportsRouting(repository: TaskRepository, reportsServi
 
                 call.response.header(
                     HttpHeaders.ContentDisposition,
-                    "attachment; filename=\"placement_order.pdf\""
+                    "attachment; filename=\"placement_order.pdf\"" // file name will primarily come from the backend
                 )
                 call.respondBytes(
                     placementOrderBytes,

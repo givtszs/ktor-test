@@ -10,18 +10,19 @@
     <parameter name="dormitory" class="java.lang.String"/>
     <parameter name="room" class="java.lang.String"/>
     <parameter name="fluorographyLastDate" class="java.lang.String"/>
+    <parameter name="settlementDate" class="java.lang.String"/>
     <detail>
-        <band height="800" splitType="Stretch">
+        <band height="802" splitType="Stretch">
             <property name="com.jaspersoft.studio.unit.height" value="px"/>
             <staticText>
-                <reportElement mode="Transparent" x="120" y="0" width="355" height="30" uuid="afb05f9f-a500-4c2e-bbc9-edbf7ffb4ef2"/>
+                <reportElement mode="Transparent" x="137" y="0" width="280" height="30" uuid="afb05f9f-a500-4c2e-bbc9-edbf7ffb4ef2"/>
                 <textElement textAlignment="Center" verticalAlignment="Middle">
-                    <font fontName="Times New Roman" size="11" isBold="true"/>
+                    <font fontName="Times New Roman" size="16" isBold="true"/>
                 </textElement>
                 <text><![CDATA[НАПРАВЛЕННЯ НА ПОСЕЛЕННЯ]]></text>
             </staticText>
             <staticText>
-                <reportElement x="20" y="50" width="120" height="20" uuid="93fb1d8d-427e-4df1-9815-9de5e044b9cc">
+                <reportElement x="20" y="81" width="120" height="20" uuid="93fb1d8d-427e-4df1-9815-9de5e044b9cc">
                     <property name="com.jaspersoft.studio.unit.x" value="px"/>
                     <property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
                 </reportElement>
@@ -29,10 +30,10 @@
                     <font fontName="Times New Roman" size="14"/>
                     <paragraph leftIndent="2"/>
                 </textElement>
-                <text><![CDATA[П.І.Б студента]]></text>
+                <text><![CDATA[П.І.Б студента:]]></text>
             </staticText>
             <staticText>
-                <reportElement x="20" y="70" width="120" height="20" uuid="cf8d8f72-61dc-49bf-982d-c29184037231">
+                <reportElement x="20" y="101" width="120" height="20" uuid="cf8d8f72-61dc-49bf-982d-c29184037231">
                     <property name="com.jaspersoft.studio.unit.x" value="px"/>
                     <property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
                 </reportElement>
@@ -40,10 +41,10 @@
                     <font fontName="Times New Roman" size="14"/>
                     <paragraph leftIndent="2"/>
                 </textElement>
-                <text><![CDATA[Факультет]]></text>
+                <text><![CDATA[факультет]]></text>
             </staticText>
             <staticText>
-                <reportElement x="20" y="90" width="120" height="20" uuid="ac620594-c8e9-43b3-89c9-72f8ebcdb2a0">
+                <reportElement x="20" y="121" width="120" height="20" uuid="ac620594-c8e9-43b3-89c9-72f8ebcdb2a0">
                     <property name="com.jaspersoft.studio.unit.x" value="px"/>
                     <property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
                 </reportElement>
@@ -51,10 +52,10 @@
                     <font fontName="Times New Roman" size="14"/>
                     <paragraph leftIndent="2"/>
                 </textElement>
-                <text><![CDATA[Освітній рівень]]></text>
+                <text><![CDATA[освітній рівень]]></text>
             </staticText>
             <staticText>
-                <reportElement x="20" y="110" width="120" height="20" uuid="561b40b2-f08d-45b8-8499-aa67581295c4">
+                <reportElement x="20" y="141" width="120" height="20" uuid="561b40b2-f08d-45b8-8499-aa67581295c4">
                     <property name="com.jaspersoft.studio.unit.x" value="px"/>
                     <property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
                 </reportElement>
@@ -62,52 +63,34 @@
                     <font fontName="Times New Roman" size="14"/>
                     <paragraph leftIndent="2"/>
                 </textElement>
-                <text><![CDATA[Гуртожиток]]></text>
+                <text><![CDATA[гуртожиток]]></text>
             </staticText>
             <rectangle>
-                <reportElement x="140" y="50" width="390" height="20" uuid="926cc0e0-e87f-4f7b-8236-1baf3d52306f"/>
+                <reportElement x="140" y="81" width="390" height="20" uuid="926cc0e0-e87f-4f7b-8236-1baf3d52306f"/>
             </rectangle>
             <rectangle>
-                <reportElement x="140" y="70" width="390" height="20" uuid="02fc1035-5f71-4a2a-99c7-240361d56bc8"/>
+                <reportElement x="140" y="101" width="390" height="20" uuid="02fc1035-5f71-4a2a-99c7-240361d56bc8"/>
             </rectangle>
             <rectangle>
-                <reportElement mode="Transparent" x="20" y="50" width="120" height="20" uuid="2c3846f3-07d2-4ddd-906c-513b64770062"/>
+                <reportElement mode="Transparent" x="20" y="81" width="120" height="20" uuid="2c3846f3-07d2-4ddd-906c-513b64770062"/>
             </rectangle>
             <rectangle>
-                <reportElement mode="Transparent" x="20" y="70" width="120" height="20" uuid="6bca3a6a-798f-4724-aa25-e68967bac259"/>
+                <reportElement mode="Transparent" x="20" y="101" width="120" height="20" uuid="6bca3a6a-798f-4724-aa25-e68967bac259"/>
             </rectangle>
             <rectangle>
-                <reportElement mode="Transparent" x="20" y="110" width="120" height="20" uuid="f961f4d2-62b0-4440-a3f7-709932e94ea3"/>
+                <reportElement mode="Transparent" x="20" y="141" width="120" height="20" uuid="f961f4d2-62b0-4440-a3f7-709932e94ea3"/>
             </rectangle>
             <rectangle>
-                <reportElement x="140" y="90" width="130" height="20" uuid="0ac06c6e-41e0-48b0-8ce4-71669898ce28"/>
+                <reportElement x="140" y="121" width="130" height="20" uuid="0ac06c6e-41e0-48b0-8ce4-71669898ce28"/>
             </rectangle>
             <rectangle>
-                <reportElement x="270" y="90" width="130" height="20" uuid="de71e401-7e2f-4233-95d8-033ca26b8a41"/>
+                <reportElement x="270" y="121" width="130" height="20" uuid="de71e401-7e2f-4233-95d8-033ca26b8a41"/>
             </rectangle>
             <rectangle>
-                <reportElement x="400" y="90" width="130" height="20" uuid="f2fb7172-21ba-4188-9526-50d95dbf5fef"/>
+                <reportElement x="400" y="121" width="130" height="20" uuid="f2fb7172-21ba-4188-9526-50d95dbf5fef"/>
             </rectangle>
             <staticText>
-                <reportElement x="270" y="90" width="130" height="20" uuid="59dd1e50-783a-4867-9c59-a6ccf18b238a">
-                    <property name="com.jaspersoft.studio.unit.x" value="px"/>
-                    <property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
-                    <property name="com.jaspersoft.studio.unit.width" value="px"/>
-                </reportElement>
-                <textElement textAlignment="Left" verticalAlignment="Middle">
-                    <font fontName="Times New Roman" size="14"/>
-                    <paragraph leftIndent="2"/>
-                </textElement>
-                <text><![CDATA[Курс]]></text>
-            </staticText>
-            <rectangle>
-                <reportElement mode="Transparent" x="20" y="90" width="120" height="20" uuid="f42be857-2c02-4edd-b1e4-ebeccb88e066"/>
-            </rectangle>
-            <rectangle>
-                <reportElement x="140" y="110" width="130" height="20" uuid="ef5d5a22-a866-4b0d-a690-48022b6b7ea9"/>
-            </rectangle>
-            <staticText>
-                <reportElement x="270" y="110" width="130" height="20" uuid="7e4609f7-298a-4ac9-aaa2-b6fa99f00f66">
+                <reportElement x="270" y="121" width="130" height="20" uuid="59dd1e50-783a-4867-9c59-a6ccf18b238a">
                     <property name="com.jaspersoft.studio.unit.x" value="px"/>
                     <property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
                     <property name="com.jaspersoft.studio.unit.width" value="px"/>
@@ -116,32 +99,50 @@
                     <font fontName="Times New Roman" size="14"/>
                     <paragraph leftIndent="2"/>
                 </textElement>
-                <text><![CDATA[Кімната]]></text>
+                <text><![CDATA[курс]]></text>
             </staticText>
             <rectangle>
-                <reportElement x="400" y="110" width="130" height="20" uuid="29ad0c20-355e-4c88-9502-b375df5d9a46"/>
+                <reportElement mode="Transparent" x="20" y="121" width="120" height="20" uuid="f42be857-2c02-4edd-b1e4-ebeccb88e066"/>
             </rectangle>
             <rectangle>
-                <reportElement mode="Transparent" x="270" y="110" width="130" height="20" uuid="0a42e4e2-5b5e-4029-9ed4-741cce0adde1"/>
+                <reportElement x="140" y="141" width="130" height="20" uuid="ef5d5a22-a866-4b0d-a690-48022b6b7ea9"/>
+            </rectangle>
+            <staticText>
+                <reportElement x="270" y="141" width="130" height="20" uuid="7e4609f7-298a-4ac9-aaa2-b6fa99f00f66">
+                    <property name="com.jaspersoft.studio.unit.x" value="px"/>
+                    <property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+                    <property name="com.jaspersoft.studio.unit.width" value="px"/>
+                </reportElement>
+                <textElement textAlignment="Left" verticalAlignment="Middle">
+                    <font fontName="Times New Roman" size="14"/>
+                    <paragraph leftIndent="2"/>
+                </textElement>
+                <text><![CDATA[кімната]]></text>
+            </staticText>
+            <rectangle>
+                <reportElement x="400" y="141" width="130" height="20" uuid="29ad0c20-355e-4c88-9502-b375df5d9a46"/>
             </rectangle>
             <rectangle>
-                <reportElement x="20" y="160" width="120" height="90" uuid="6ec67714-edce-4690-8a88-21a5f0eb61dc">
+                <reportElement mode="Transparent" x="270" y="141" width="130" height="20" uuid="0a42e4e2-5b5e-4029-9ed4-741cce0adde1"/>
+            </rectangle>
+            <rectangle>
+                <reportElement x="20" y="191" width="120" height="90" uuid="6ec67714-edce-4690-8a88-21a5f0eb61dc">
                     <property name="com.jaspersoft.studio.unit.height" value="px"/>
                 </reportElement>
             </rectangle>
             <rectangle>
-                <reportElement x="140" y="160" width="129" height="90" uuid="68d5616f-9825-41d4-9135-6b892399526c">
+                <reportElement x="140" y="191" width="129" height="90" uuid="68d5616f-9825-41d4-9135-6b892399526c">
                     <property name="com.jaspersoft.studio.unit.height" value="px"/>
                 </reportElement>
             </rectangle>
             <rectangle>
-                <reportElement x="269" y="160" width="130" height="90" uuid="0d5114a4-ea39-49ad-802a-5db0cc673add">
+                <reportElement x="269" y="191" width="130" height="90" uuid="0d5114a4-ea39-49ad-802a-5db0cc673add">
                     <property name="com.jaspersoft.studio.unit.width" value="px"/>
                     <property name="com.jaspersoft.studio.unit.height" value="px"/>
                 </reportElement>
             </rectangle>
             <staticText>
-                <reportElement x="20" y="160" width="119" height="90" uuid="6cc65118-cad8-4a67-b493-7bf0b0e3c0f2">
+                <reportElement x="20" y="191" width="119" height="90" uuid="6cc65118-cad8-4a67-b493-7bf0b0e3c0f2">
                     <property name="com.jaspersoft.studio.unit.x" value="px"/>
                     <property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
                     <property name="com.jaspersoft.studio.unit.height" value="px"/>
@@ -153,30 +154,30 @@
                 <text><![CDATA[Відмітка про стан здоров'я]]></text>
             </staticText>
             <staticText>
-                <reportElement x="140" y="160" width="129" height="90" uuid="1b308473-0c28-4961-b685-c707d9500ef7"/>
+                <reportElement x="140" y="191" width="129" height="90" uuid="1b308473-0c28-4961-b685-c707d9500ef7"/>
                 <textElement textAlignment="Center" verticalAlignment="Middle">
                     <font fontName="Times New Roman" size="11"/>
                 </textElement>
                 <text><![CDATA[медпункт (навч. корп. 6, вхід збоку будівлі, зі сторони дитячого садка)]]></text>
             </staticText>
             <rectangle>
-                <reportElement x="20" y="250" width="120" height="90" uuid="0f68318d-ac73-4749-b5fd-4a83f3e35bfd">
+                <reportElement x="20" y="281" width="120" height="90" uuid="0f68318d-ac73-4749-b5fd-4a83f3e35bfd">
                     <property name="com.jaspersoft.studio.unit.height" value="px"/>
                 </reportElement>
             </rectangle>
             <rectangle>
-                <reportElement x="140" y="250" width="129" height="90" uuid="5a69825c-016b-4a0a-a2cd-da6466c89e13">
+                <reportElement x="140" y="281" width="129" height="90" uuid="5a69825c-016b-4a0a-a2cd-da6466c89e13">
                     <property name="com.jaspersoft.studio.unit.height" value="px"/>
                 </reportElement>
             </rectangle>
             <rectangle>
-                <reportElement x="269" y="250" width="260" height="90" uuid="f33bb65c-69c4-42b9-b024-67200fba6b73">
+                <reportElement x="269" y="281" width="260" height="90" uuid="f33bb65c-69c4-42b9-b024-67200fba6b73">
                     <property name="com.jaspersoft.studio.unit.x" value="pixel"/>
                     <property name="com.jaspersoft.studio.unit.height" value="px"/>
                 </reportElement>
             </rectangle>
             <staticText>
-                <reportElement x="20" y="250" width="115" height="90" uuid="b0f722bc-9108-4563-880e-5a8e017dc5ad">
+                <reportElement x="20" y="281" width="115" height="90" uuid="b0f722bc-9108-4563-880e-5a8e017dc5ad">
                     <property name="com.jaspersoft.studio.unit.width" value="px"/>
                     <property name="com.jaspersoft.studio.unit.height" value="px"/>
                     <property name="com.jaspersoft.studio.unit.x" value="px"/>
@@ -189,26 +190,26 @@
                 <text><![CDATA[Інструктаж з користування газом (для гуртожитків № 3 та № 6)]]></text>
             </staticText>
             <staticText>
-                <reportElement x="140" y="250" width="129" height="90" uuid="f4539f62-135d-4450-9dfe-bf42f4305bb8"/>
+                <reportElement x="140" y="281" width="129" height="90" uuid="f4539f62-135d-4450-9dfe-bf42f4305bb8"/>
                 <textElement textAlignment="Center" verticalAlignment="Middle">
                     <font fontName="Times New Roman" size="11"/>
                 </textElement>
                 <text><![CDATA[вул. Південне Шосе, 52. Доїхати можна трамваєм № 3 та № 16 до зупинки "вул. Діагональна"]]></text>
             </staticText>
             <staticText>
-                <reportElement x="267" y="250" width="261" height="90" uuid="58490500-f596-4c34-b0d8-379f9d2da1c9"/>
+                <reportElement x="267" y="281" width="261" height="90" uuid="58490500-f596-4c34-b0d8-379f9d2da1c9"/>
                 <textElement textAlignment="Center" verticalAlignment="Middle">
                     <font fontName="Times New Roman" size="11"/>
                 </textElement>
                 <text><![CDATA[Прослухати лекцію-інструктаж. Отримати довідку. Графік роботи: понеділок-пятниця, початок лекції в 9.00, 11.00, 15.00 (жива черга)]]></text>
             </staticText>
             <rectangle>
-                <reportElement x="20" y="340" width="120" height="50" uuid="8f26e152-dea5-4b13-a28c-1e28debe8ce0">
+                <reportElement x="20" y="371" width="120" height="50" uuid="8f26e152-dea5-4b13-a28c-1e28debe8ce0">
                     <property name="com.jaspersoft.studio.unit.y" value="pixel"/>
                 </reportElement>
             </rectangle>
             <staticText>
-                <reportElement x="20" y="340" width="120" height="50" uuid="7affc512-cfcc-4e92-af55-adc35d0230d5">
+                <reportElement x="20" y="371" width="120" height="50" uuid="7affc512-cfcc-4e92-af55-adc35d0230d5">
                     <property name="com.jaspersoft.studio.unit.x" value="px"/>
                     <property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
                 </reportElement>
@@ -219,40 +220,40 @@
                 <text><![CDATA[Оплата за проживання]]></text>
             </staticText>
             <rectangle>
-                <reportElement x="140" y="340" width="260" height="50" uuid="4c743c35-a4f4-49c5-ae76-666b60b66807"/>
+                <reportElement x="140" y="371" width="260" height="50" uuid="4c743c35-a4f4-49c5-ae76-666b60b66807"/>
             </rectangle>
             <rectangle>
-                <reportElement x="400" y="340" width="129" height="50" uuid="a31374ef-a370-4071-9a73-43de1f87bbe8">
+                <reportElement x="400" y="371" width="129" height="50" uuid="a31374ef-a370-4071-9a73-43de1f87bbe8">
                     <property name="com.jaspersoft.studio.unit.width" value="px"/>
                 </reportElement>
             </rectangle>
             <staticText>
-                <reportElement x="140" y="340" width="260" height="50" uuid="6d355b54-14d9-4606-8fea-0a2f8d6ab69d"/>
+                <reportElement x="140" y="371" width="260" height="50" uuid="6d355b54-14d9-4606-8fea-0a2f8d6ab69d"/>
                 <textElement textAlignment="Center" verticalAlignment="Middle">
                     <font fontName="Times New Roman" size="11"/>
                 </textElement>
                 <text><![CDATA["Запорізький національний університет" р\р UA 618201720313281001202002045 в ДКСУ у місті Київ ЄДРПОУ 0212524]]></text>
             </staticText>
             <rectangle>
-                <reportElement x="20" y="430" width="250" height="20" uuid="9ad13630-c135-4504-8ca3-3f0acbeee16e"/>
+                <reportElement x="20" y="461" width="250" height="20" uuid="9ad13630-c135-4504-8ca3-3f0acbeee16e"/>
             </rectangle>
             <rectangle>
-                <reportElement x="270" y="430" width="130" height="20" uuid="5286cc6d-6af9-42c0-93dc-6d618b76db6a"/>
+                <reportElement x="270" y="461" width="130" height="20" uuid="5286cc6d-6af9-42c0-93dc-6d618b76db6a"/>
             </rectangle>
             <rectangle>
-                <reportElement x="400" y="430" width="130" height="21" uuid="6541e5fb-16a5-4ef1-8393-3bdce5b7a2dd"/>
+                <reportElement x="400" y="461" width="130" height="21" uuid="6541e5fb-16a5-4ef1-8393-3bdce5b7a2dd"/>
             </rectangle>
             <rectangle>
-                <reportElement x="20" y="450" width="250" height="30" uuid="86ad4fb4-6968-4b1e-b546-12e3a9c25fa4"/>
+                <reportElement x="20" y="481" width="250" height="30" uuid="86ad4fb4-6968-4b1e-b546-12e3a9c25fa4"/>
             </rectangle>
             <rectangle>
-                <reportElement x="270" y="450" width="130" height="30" uuid="3f51c1a6-3f4f-430b-b0d3-df8f52668ce6"/>
+                <reportElement x="270" y="481" width="130" height="30" uuid="3f51c1a6-3f4f-430b-b0d3-df8f52668ce6"/>
             </rectangle>
             <rectangle>
-                <reportElement x="400" y="450" width="130" height="30" uuid="5bfeda41-2a60-4829-bdf8-6f981b8b145a"/>
+                <reportElement x="400" y="481" width="130" height="30" uuid="5bfeda41-2a60-4829-bdf8-6f981b8b145a"/>
             </rectangle>
             <staticText>
-                <reportElement x="20" y="430" width="250" height="19" uuid="7104feb6-0c65-452c-afb0-2faa8a788f30">
+                <reportElement x="20" y="461" width="250" height="19" uuid="7104feb6-0c65-452c-afb0-2faa8a788f30">
                     <property name="com.jaspersoft.studio.unit.x" value="px"/>
                     <property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
                 </reportElement>
@@ -263,7 +264,7 @@
                 <text><![CDATA[Оформлення документів]]></text>
             </staticText>
             <staticText>
-                <reportElement x="270" y="430" width="130" height="19" uuid="b8d4873a-19ca-4231-a87c-7f12bfaaa1bc">
+                <reportElement x="270" y="461" width="130" height="19" uuid="b8d4873a-19ca-4231-a87c-7f12bfaaa1bc">
                     <property name="com.jaspersoft.studio.unit.x" value="px"/>
                     <property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
                 </reportElement>
@@ -274,7 +275,7 @@
                 <text><![CDATA[гурт № 3, каб. 414]]></text>
             </staticText>
             <staticText>
-                <reportElement x="20" y="450" width="250" height="30" uuid="d1d70d97-5cde-4347-99cb-14b41468ccd9">
+                <reportElement x="20" y="481" width="250" height="30" uuid="d1d70d97-5cde-4347-99cb-14b41468ccd9">
                     <property name="com.jaspersoft.studio.unit.x" value="px"/>
                     <property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
                 </reportElement>
@@ -285,7 +286,7 @@
                 <text><![CDATA[Завідувач гуртожитком (поселення)]]></text>
             </staticText>
             <staticText>
-                <reportElement x="270" y="450" width="130" height="30" uuid="4ab05374-9c8f-4887-80e4-9ab0546ac07c">
+                <reportElement x="270" y="481" width="130" height="30" uuid="4ab05374-9c8f-4887-80e4-9ab0546ac07c">
                     <property name="com.jaspersoft.studio.unit.x" value="px"/>
                     <property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
                 </reportElement>
@@ -296,7 +297,7 @@
                 <text><![CDATA[кабінет завідувача гуртожитком]]></text>
             </staticText>
             <staticText>
-                <reportElement x="400" y="450" width="130" height="30" uuid="4c82ff0a-b0b7-406a-8d17-9d73d8153c1e">
+                <reportElement x="400" y="481" width="130" height="30" uuid="4c82ff0a-b0b7-406a-8d17-9d73d8153c1e">
                     <property name="com.jaspersoft.studio.unit.x" value="px"/>
                     <property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
                 </reportElement>
@@ -307,14 +308,14 @@
                 <text><![CDATA[оформлення, отримання ключа від кімнати]]></text>
             </staticText>
             <staticText>
-                <reportElement x="20" y="502" width="510" height="20" uuid="38a30466-78ae-4e53-b9a8-d866ce702d22"/>
+                <reportElement x="20" y="533" width="510" height="20" uuid="38a30466-78ae-4e53-b9a8-d866ce702d22"/>
                 <textElement textAlignment="Center">
                     <font fontName="Times New Roman" size="11"/>
                 </textElement>
                 <text><![CDATA[Два останні пункти проходите після виконання попередніх.]]></text>
             </staticText>
-            <textField textAdjust="ScaleFont">
-                <reportElement x="140" y="50" width="388" height="20" uuid="05880c98-4a89-4c2a-bba9-d7bfa1aba8f2">
+            <textField>
+                <reportElement x="140" y="81" width="388" height="20" uuid="05880c98-4a89-4c2a-bba9-d7bfa1aba8f2">
                     <property name="com.jaspersoft.studio.unit.x" value="px"/>
                     <property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
                     <property name="com.jaspersoft.studio.unit.height" value="px"/>
@@ -326,8 +327,8 @@
                 </textElement>
                 <textFieldExpression><![CDATA[$P{secondName} + " " + $P{firstName} + " " + $P{lastName}]]></textFieldExpression>
             </textField>
-            <textField textAdjust="ScaleFont">
-                <reportElement x="140" y="70" width="390" height="20" uuid="02482b6b-7060-4a1f-8a01-54651e16344d">
+            <textField>
+                <reportElement x="140" y="101" width="390" height="20" uuid="02482b6b-7060-4a1f-8a01-54651e16344d">
                     <property name="com.jaspersoft.studio.unit.x" value="px"/>
                     <property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
                     <property name="com.jaspersoft.studio.unit.height" value="px"/>
@@ -340,7 +341,7 @@
                 <textFieldExpression><![CDATA[$P{faculty}]]></textFieldExpression>
             </textField>
             <textField textAdjust="ScaleFont">
-                <reportElement x="140" y="90" width="130" height="20" uuid="01f6a32d-bc6e-40aa-94d2-481f2a62f95f">
+                <reportElement x="140" y="121" width="130" height="20" uuid="01f6a32d-bc6e-40aa-94d2-481f2a62f95f">
                     <property name="com.jaspersoft.studio.unit.x" value="px"/>
                     <property name="com.jaspersoft.studio.unit.firstLineIndent" value="px"/>
                     <property name="com.jaspersoft.studio.unit.height" value="px"/>
@@ -353,7 +354,7 @@
                 <textFieldExpression><![CDATA[$P{educationLevel}]]></textFieldExpression>
             </textField>
             <textField>
-                <reportElement x="400" y="90" width="130" height="20" uuid="9e59a9f0-9265-4787-be11-3b5302dcf9d3">
+                <reportElement x="400" y="121" width="130" height="20" uuid="9e59a9f0-9265-4787-be11-3b5302dcf9d3">
                     <property name="com.jaspersoft.studio.unit.x" value="px"/>
                     <property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
                     <property name="com.jaspersoft.studio.unit.height" value="px"/>
@@ -366,7 +367,7 @@
                 <textFieldExpression><![CDATA[$P{course}]]></textFieldExpression>
             </textField>
             <textField>
-                <reportElement x="140" y="110" width="130" height="20" uuid="a1c6ab7b-39d9-4806-91e9-6b2ecb4197af">
+                <reportElement x="140" y="141" width="130" height="20" uuid="a1c6ab7b-39d9-4806-91e9-6b2ecb4197af">
                     <property name="com.jaspersoft.studio.unit.x" value="px"/>
                     <property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
                     <property name="com.jaspersoft.studio.unit.height" value="px"/>
@@ -379,7 +380,7 @@
                 <textFieldExpression><![CDATA[$P{dormitory}]]></textFieldExpression>
             </textField>
             <textField>
-                <reportElement x="400" y="110" width="130" height="20" uuid="ed8bd879-d31c-4a1d-8b7e-b2d615e07c1d">
+                <reportElement x="400" y="141" width="130" height="20" uuid="ed8bd879-d31c-4a1d-8b7e-b2d615e07c1d">
                     <property name="com.jaspersoft.studio.unit.x" value="px"/>
                     <property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
                     <property name="com.jaspersoft.studio.unit.width" value="px"/>
@@ -392,12 +393,12 @@
                 <textFieldExpression><![CDATA[$P{room}]]></textFieldExpression>
             </textField>
             <rectangle>
-                <reportElement x="399" y="160" width="130" height="90" uuid="fcf65c92-8efc-430d-8197-110654f4dd45">
+                <reportElement x="399" y="191" width="130" height="90" uuid="fcf65c92-8efc-430d-8197-110654f4dd45">
                     <property name="com.jaspersoft.studio.unit.width" value="px"/>
                 </reportElement>
             </rectangle>
             <textField>
-                <reportElement x="270" y="160" width="129" height="90" uuid="138d28a2-ed66-4b6e-a361-e8a605f708d7">
+                <reportElement x="270" y="191" width="129" height="90" uuid="138d28a2-ed66-4b6e-a361-e8a605f708d7">
                     <property name="com.jaspersoft.studio.unit.x" value="px"/>
                     <property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
                 </reportElement>
@@ -405,7 +406,18 @@
                     <font fontName="Times New Roman" size="14"/>
                     <paragraph leftIndent="2"/>
                 </textElement>
-                <textFieldExpression><![CDATA["Дата останньої флюорографії: " + $P{fluorographyLastDate}]]></textFieldExpression>
+                <textFieldExpression><![CDATA["Дата останнього щеплення: " + $P{fluorographyLastDate}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="187" y="30" width="283" height="20" uuid="d6e6a02f-307f-4eca-81e8-733ddc5be544">
+                    <property name="com.jaspersoft.studio.unit.x" value="px"/>
+                    <property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+                </reportElement>
+                <textElement textAlignment="Left" verticalAlignment="Middle">
+                    <font fontName="Times New Roman" size="14"/>
+                    <paragraph leftIndent="2"/>
+                </textElement>
+                <textFieldExpression><![CDATA["(Дата поселення: " + $P{settlementDate} + ")"]]></textFieldExpression>
             </textField>
         </band>
     </detail>

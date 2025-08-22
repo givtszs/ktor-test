@@ -12,5 +12,6 @@ data class PlacementOrderData(
     val course: String,
     val dormitory: String,
     val room: String,
-    val fluorographyLastDate: String
+    val fluorographyLastDate: String,
+    val settlementDate: String,
 )
